@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    display: grid;
+    font-family: "roboto-variable", sans-serif;
+}
+
+.container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr 3fr;
+width: 100vw;
+
+}
+
+.sidebar {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: rgb(0, 195, 255);
+    color: white;
+    grid-template-rows: 1fr 4fr;
+}
+
+.dash-img {
+    fill: white;
+    
+}
+
+.h-title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0px;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.h-title h2 {
+    margin-left: -20px;;
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 5;
+    grid-row: 1 / 1;
+    background-color: lightyellow;
+}
+
+.main-content {
+    display: grid;
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    background-color: lightgray;
+
+}
+
+@font-face {
+    font-family: "roboto-variable";
+    src: url("/fonts/roboto-var.tff");
+}
